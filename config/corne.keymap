@@ -58,10 +58,10 @@
 
         nav_layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+&none  &trans  &trans  &trans  &trans  &trans    &trans      &kp LG(LEFT)    &kp LG(DOWN_ARROW)  &kp LG(UP_ARROW)  &kp LG(RIGHT)  &none
+&none  &trans  &trans  &trans  &trans  &trans    &caps_word  &kp LEFT_ARROW  &kp DOWN_ARROW      &kp UP_ARROW      &kp RIGHT      &none
+&none  &trans  &trans  &trans  &trans  &trans    &kp INSERT  &kp HOME        &kp PAGE_DOWN       &kp PAGE_UP       &kp END        &none
+                       &trans  &trans  &trans    &trans      &kp BACKSPACE   &kp DELETE
             >;
         };
 
