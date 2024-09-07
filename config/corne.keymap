@@ -16,6 +16,11 @@
             bindings = <&kp MINUS>;
             key-positions = <3 8>;
         };
+
+        cb_colon {
+            bindings = <&kp COLON>;
+            key-positions = <4 7>;
+        };
     };
 
     keymap {
