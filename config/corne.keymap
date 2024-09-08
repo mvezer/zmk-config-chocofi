@@ -1,4 +1,3 @@
-
 /*
  * Copyright (c) 2020 The ZMK Contributors
  *
@@ -30,7 +29,7 @@
         };
 
         cb_gaming {
-            bindings = <&tog 5>;
+            bindings = <&tog 0>;
             key-positions = <25 34>;
         };
     };
@@ -49,7 +48,7 @@
 &none  &kp Q           &kp W           &kp F               &kp P             &kp B        &kp J        &kp L              &kp U        &kp Y            &kp SQT          &none
 &none  &mt LEFT_GUI A  &mt LEFT_ALT R  &mt LEFT_CONTROL S  &mt LEFT_SHIFT T  &kp G        &kp M        &mt RIGHT_SHIFT N  &mt RCTRL E  &mt RIGHT_ALT I  &mt RIGHT_WIN O  &none
 &none  &kp Z           &kp X           &kp C               &kp D             &kp V        &kp K        &kp H              &kp COMMA    &kp DOT          &kp FSLH         &none
-                                       &lt 2 ESCAPE        &lt 3 SPACE       &lt 1 TAB    &lt 4 ENTER  &kp BACKSPACE      &kp DELETE
+                                       &none               &lt 3 SPACE       &lt 2 TAB    &lt 1 ENTER  &kp BACKSPACE      &none
             >;
         };
 
@@ -61,10 +60,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&none  &trans  &trans  &trans  &trans  &trans    &kp AMPERSAND    &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp DOLLAR   &kp GRAVE      &none
-&none  &trans  &trans  &trans  &trans  &trans    &kp EXCLAMATION  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp COLON    &kp SEMICOLON  &none
-&none  &trans  &trans  &trans  &trans  &trans    &kp CARET        &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp AT_SIGN  &kp HASH       &none
-                       &trans  &trans  &trans    &kp TILDE        &kp PIPE              &kp BACKSLASH
+&none  &kp AMPERSAND  &kp TILDE   &kp PERCENT  &kp GRAVE     &kp EQUAL        &bt BT_SEL 1  &kp F7  &kp F8  &kp F9  &kp F12  &none
+&none  &kp SEMI       &kp DOLLAR  &kp HASH     &kp ASTERISK  &kp PLUS         &bt BT_SEL 2  &kp F4  &kp F5  &kp F6  &kp F11  &none
+&none  &kp CARET      &kp UNDER   &kp AT_SIGN  &kp PIPE      &kp BACKSLASH    &bt BT_SEL 3  &kp F1  &kp F2  &kp F3  &kp F10  &none
+                                  &none        &trans        &trans           &trans        &trans  &none
             >;
         };
 
@@ -91,24 +90,7 @@
                        &trans  &trans  &trans    &trans      &kp BACKSPACE   &kp DELETE
             >;
         };
-
-        misc_layer {
-            bindings = <
-&none  &kp F12  &kp F7  &kp F8           &kp F9             &bt BT_SEL 0    &trans  &trans  &trans  &trans  &trans  &none
-&none  &kp F11  &kp F4  &kp F5           &kp F6             &bt BT_SEL 1    &trans  &trans  &trans  &trans  &trans  &none
-&none  &kp F10  &kp F1  &kp F2           &kp F3             &bt BT_SEL 3    &trans  &trans  &trans  &trans  &trans  &none
-                        &kp C_VOLUME_UP  &kp C_VOLUME_DOWN  &kp C_MUTE      &trans  &trans  &trans
-            >;
-        };
-
-        gaming_layer {
-            bindings = <
-&none  &kp NUMBER_1  &kp Q  &kp W       &kp E      &kp R      &kp T      &kp Y      &kp U           &kp O      &kp P     &none
-&none  &kp NUMBER_2  &kp A  &kp S       &kp D      &kp F      &kp G      &kp H      &kp J           &kp K      &kp L     &none
-&none  &kp NUMBER_3  &kp Z  &kp X       &kp C      &kp V      &kp B      &kp N      &kp M           &kp MINUS  &kp PLUS  &none
-                            &kp ESCAPE  &kp SPACE  &kp TAB    &kp ENTER  &kp SPACE  &kp LEFT_SHIFT
-            >;
-        };
     };
 };
+
 ;
