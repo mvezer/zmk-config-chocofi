@@ -27,6 +27,11 @@
             bindings = <&kp COLON>;
             key-positions = <4 7>;
         };
+
+        cb_gaming {
+            bindings = <&tog 5>;
+            key-positions = <25 34>;
+        };
     };
 
     keymap {
@@ -92,6 +97,15 @@
 &none  &kp F11  &kp F4  &kp F5           &kp F6             &bt BT_SEL 1    &trans  &trans  &trans  &trans  &trans  &none
 &none  &kp F10  &kp F1  &kp F2           &kp F3             &bt BT_SEL 3    &trans  &trans  &trans  &trans  &trans  &none
                         &kp C_VOLUME_UP  &kp C_VOLUME_DOWN  &kp C_MUTE      &trans  &trans  &trans
+            >;
+        };
+
+        gaming_layer {
+            bindings = <
+&none  &kp NUMBER_1  &kp Q  &kp W       &kp E      &kp R      &kp T      &kp Y      &kp U           &kp O      &kp P     &none
+&none  &kp NUMBER_2  &kp A  &kp S       &kp D      &kp F      &kp G      &kp H      &kp J           &kp K      &kp L     &none
+&none  &kp NUMBER_3  &kp Z  &kp X       &kp C      &kp V      &kp B      &kp N      &kp M           &kp MINUS  &kp PLUS  &none
+                            &kp ESCAPE  &kp SPACE  &kp TAB    &kp ENTER  &kp SPACE  &kp LEFT_SHIFT
             >;
         };
     };
