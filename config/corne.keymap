@@ -18,19 +18,64 @@
     combos {
         compatible = "zmk,combos";
 
-        cb_minus {
+        left_brace {
+            bindings = <&kp LEFT_BRACE>;
+            key-positions = <2 3>;
+        };
+
+        right_brace {
+            bindings = <&kp RIGHT_BRACE>;
+            key-positions = <4 3>;
+        };
+
+        left_parenthesis {
+            bindings = <&kp LEFT_PARENTHESIS>;
+            key-positions = <14 15>;
+        };
+
+        right_parenthesis {
+            bindings = <&kp RIGHT_PARENTHESIS>;
+            key-positions = <16 15>;
+        };
+
+        left_bracket {
+            bindings = <&kp LEFT_BRACKET>;
+            key-positions = <27 26>;
+        };
+
+        right_bracket {
+            bindings = <&kp RIGHT_BRACKET>;
+            key-positions = <28 27>;
+        };
+
+        minus {
             bindings = <&kp MINUS>;
-            key-positions = <3 8>;
+            key-positions = <7 8>;
         };
 
-        cb_colon {
+        equal {
+            bindings = <&kp EQUAL>;
+            key-positions = <8 9>;
+        };
+
+        colon {
             bindings = <&kp COLON>;
-            key-positions = <4 7>;
+            key-positions = <19 20>;
         };
 
-        cb_gaming {
-            bindings = <&tog 0>;
-            key-positions = <25 34>;
+        escape {
+            bindings = <&kp ESCAPE>;
+            key-positions = <20 21>;
+        };
+
+        exclamation {
+            bindings = <&kp EXCLAMATION>;
+            key-positions = <31 32>;
+        };
+
+        delete {
+            bindings = <&kp DELETE>;
+            key-positions = <32 33>;
         };
     };
 
@@ -60,10 +105,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&none  &kp AMPERSAND  &kp TILDE   &kp PERCENT  &kp GRAVE     &kp EQUAL        &bt BT_SEL 1  &kp F7  &kp F8  &kp F9  &kp F12  &none
-&none  &kp SEMI       &kp DOLLAR  &kp HASH     &kp ASTERISK  &kp PLUS         &bt BT_SEL 2  &kp F4  &kp F5  &kp F6  &kp F11  &none
-&none  &kp CARET      &kp UNDER   &kp AT_SIGN  &kp PIPE      &kp BACKSLASH    &bt BT_SEL 3  &kp F1  &kp F2  &kp F3  &kp F10  &none
-                                  &none        &trans        &trans           &trans        &trans  &none
+&none  &kp AMPERSAND  &kp TILDE   &kp PERCENT  &kp GRAVE        &kp EQUAL            &bt BT_SEL 1  &kp F7  &kp F8  &kp F9  &kp F12  &none
+&none  &kp SEMI       &kp DOLLAR  &kp HASH     &kp ASTERISK     &kp PLUS             &bt BT_SEL 2  &kp F4  &kp F5  &kp F6  &kp F11  &none
+&none  &kp CARET      &kp UNDER   &kp AT_SIGN  &kp PIPE         &kp BACKSLASH        &bt BT_SEL 3  &kp F1  &kp F2  &kp F3  &kp F10  &none
+                                  &none        &kp C_VOLUME_UP  &kp C_VOLUME_DOWN    &trans        &trans  &none
             >;
         };
 
@@ -75,10 +120,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&none  &trans  &trans  &trans  &trans  &trans    &kp PERCENT  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp PLUS      &none
-&none  &trans  &trans  &trans  &trans  &trans    &kp MINUS    &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp EQUAL     &none
-&none  &trans  &trans  &trans  &trans  &trans    &kp UNDER    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp ASTERISK  &none
-                       &trans  &trans  &trans    &kp MINUS    &kp N0        &kp ASTERISK
+&none  &trans  &trans  &trans  &trans  &trans    &trans  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans  &none
+&none  &trans  &trans  &trans  &trans  &trans    &trans  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans  &none
+&none  &trans  &trans  &trans  &trans  &trans    &kp N0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &none
+                       &none   &trans  &trans    &trans  &trans        &none
             >;
         };
 
@@ -87,7 +132,7 @@
 &none  &trans  &trans  &trans  &trans  &trans    &trans      &kp LG(LEFT)    &kp LG(DOWN_ARROW)  &kp LG(UP_ARROW)  &kp LG(RIGHT)  &none
 &none  &trans  &trans  &trans  &trans  &trans    &caps_word  &kp LEFT_ARROW  &kp DOWN_ARROW      &kp UP_ARROW      &kp RIGHT      &none
 &none  &trans  &trans  &trans  &trans  &trans    &kp INSERT  &kp HOME        &kp PAGE_DOWN       &kp PAGE_UP       &kp END        &none
-                       &trans  &trans  &trans    &trans      &kp BACKSPACE   &kp DELETE
+                       &none   &trans  &trans    &trans      &trans          &none
             >;
         };
     };
