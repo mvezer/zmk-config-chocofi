@@ -77,6 +77,11 @@
             bindings = <&kp DELETE>;
             key-positions = <32 33>;
         };
+
+        cb_retrogaming {
+            bindings = <&tog 4>;
+            key-positions = <4 7>;
+        };
     };
 
     keymap {
@@ -133,6 +138,15 @@
 &none  &trans  &trans  &trans  &trans  &trans    &caps_word  &kp LEFT_ARROW  &kp DOWN_ARROW      &kp UP_ARROW      &kp RIGHT      &none
 &none  &trans  &trans  &trans  &trans  &trans    &kp INSERT  &kp HOME        &kp PAGE_DOWN       &kp PAGE_UP       &kp END        &none
                        &none   &trans  &trans    &trans      &trans          &none
+            >;
+        };
+
+        retrogame_layer {
+            bindings = <
+&none  &kp F1   &kp F2    &kp F3     &kp F4     &kp F5     &kp F6   &kp F7    &kp F8  &kp F9  &kp F10  &none
+&none  &kp Q    &kp W     &kp RSHFT  &kp E      &kp F      &kp J    &kp L     &kp U   &kp Y   &kp O    &none
+&none  &kp ESC  &kp LEFT  &kp DOWN   &kp RIGHT  &kp T      &kp V    &kp G     &kp M   &kp N   &kp E    &none
+                          &none      &kp SPACE  &kp TAB    &kp RET  &kp BSPC  &none
             >;
         };
     };
